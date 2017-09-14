@@ -26,57 +26,67 @@ img {border-radius: 10px;
 padding: 0px;
 margin: 0;
 border: 0;}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding-bottom: 20;
-  overflow: hidden;
-  background-color: #333;
+.navbar, .navbar-inverse {
+  border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  min-height: 80px;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
+.nav li {
+  display: inline;
   color: #E0FBFC;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
 
-li a:hover {
-  background-color: #FA9406;
+.navbar-inverse .navbar-nav > li > a {
+  color: #E0FBFC;
+  font-family: 'kaushan script' , cursive;
+  font-size: 1.7em;
+  font-weight: 300;
+  padding: 30px 25px 33px 25px;
 }
-ul {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right:0;
-  width: 100%;
-  z-index: 1;
+
+.navbar-inverse .navbar-nav li a:hover {
+  background-color: #444444;
+  transition: 0.7s all linear;
+  height: 100%;
 }
+.navbar{
+        margin-bottom: 50px !important;
+    }
 h2 {color: #E0FBFC;
 text-align: center;
 margin-top: 30px}
 h4 {color: #E0FBFC;
 text-align: center}
-.navbar{
-        margin-bottom: 50px !important;
-    }
 .btn {text-align: center;}
 label {color: #E0FBFc}
 </style>
+
  <body background="bckgrounds.jpg" class="img-responsive">
-                <ul class="navbar">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="IceCreamParlour.html">Ice Cream Parlour</a></li>
-                                <li><a href="CandyCart.html">Candy Cart</a></li>
-                                <li><a href="Get In Touch.html">Get In Touch</a></li>
-                                <li><a href="Family History.html">Family History</a></li>
-                              </ul>
-                               
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="IceCreamParlour.html">Ice Cream Parlour</a></li>
+              <li><a href="CandyCart.html">Candy Cart</a></li>
+              <li><a href="Get In Touch.html">Get In Touch</a></li>
+              <li><a href="Family History.html">Family History</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
 
 
 <div class="container">
@@ -109,15 +119,14 @@ label {color: #E0FBFc}
               </div>
               <button type="submit" class="btn btn-default">Send Message</button>
             </form>
-
             <hr>
               <h2>Check Us Out</h2>
-            <ul1 class="list-inline banner-social-buttons">
+            <ul1 class="banner-social-buttons">
               <li><a href="https://www.facebook.com/jacofalltreatscandy/?ref=br_rs" 
                 class="btn btn-default btn-lg"><i class="fa fa-facebook-official"> 
                   <span class="network-name">Facebook</span></i></a></li>
             </ul1>
-          </div>
+            </div>
         </div>
       </div>
   </div>
